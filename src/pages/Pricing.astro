@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro'; // Usar el layout ya definido
+---
+
+<Layout title="Pricing">
+  <main class="bg-gray-100 py-12 px-6">
+    <!-- Sección de Pricing -->
+    <section class="text-center mb-16">
+      <h1 class="text-center text-7xl font-extrabold">Precios del Curso</h1>
+      <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <div class="text-2xl font-semibold mb-4">
+          <span class="line-through text-red-500 text-lg mr-4">$495.000</span>
+          <span class="text-4xl font-bold text-green-600">$297.000</span>
+        </div>
+        <p class="text-xl text-gray-600 mb-6">
+          Aprovecha esta oferta limitada y ahorra un 40% en el curso de IA Generativa.
+        </p>
+
+        <!-- Garantías -->
+        <div class="bg-green-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">Garantías del Curso</h3>
+          <ul class="list-inside text-left space-y-2">
+            <li class="text-lg text-gray-700">✅ Acceso completo a todos los módulos del curso.</li>
+            <li class="text-lg text-gray-700">✅ Soporte durante y después del curso.</li>
+            <li class="text-lg text-gray-700">✅ Certificado de finalización al completar el curso.</li>
+            <li class="text-lg text-gray-700">✅ 30 días de reembolso si no estás satisfecho.</li>
+          </ul>
+        </div>
+
+        <!-- Botón de llamada a la acción (CTA) -->
+        <div class="mt-8">
+          <a href="#compra" class="bg-orange-500 text-white py-3 px-6 rounded-full text-xl font-semibold hover:bg-orange-400 transition duration-300">
+            ¡Compra ahora y comienza tu aprendizaje!
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #3b82f6, #9333ea);
+  }
+</style>
