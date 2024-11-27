@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="program-section">
     <div class="title-blue">
       <h2 class="title-blue-text">CURSO EN IA GENERATIVA</h2>
-      <img src="Line 1.png">
+      <img src="Line 1.webp">
     </div>
     <!-- Título Div Azul -->
 
@@ -91,7 +91,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
         
-          <div class="form-group">
+          <div class="form-contact">
             <label for="email">Correo Electrónico <span class="required">*</span></label>
             <input 
               type="email" 
@@ -125,7 +125,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
         
-          <div class="form-group">
+          <div class="form-contact">
             <label for="phone">Teléfono <span class="required">*</span></label>
             <input 
               type="tel" 
@@ -145,13 +145,16 @@ import Layout from '../layouts/Layout.astro';
   </section>
   <footer class="footer">
     <div class="logo" >
-      <img src="Logo Vertical Blanco (1).png">
+      <img src="Logo Vertical Blanco (1).webp">
     </div>
-    <img src="Footer.jpg">
+    <img src="Footer.webp">
     <div class="information">
       <h1>Centro de entrenamiento para programadores.</h1>
       <p>Zona Franca Santander, Edificio Zenith Piso 6</p>
-      <p>316 0522555 | encuentratutalento@campuslands.com </p>
+      <p>
+        <a href="tel:+573160522555" style="color: white; text-decoration: none;">316 0522555</a> | 
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=encuentratutalento@campuslands.com&su=Contacto..." target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">encuentratutalento@campuslands.com</a>
+      </p>
     </div>
   </footer>
 </Layout>
@@ -171,7 +174,7 @@ import Layout from '../layouts/Layout.astro';
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('/public/home.jpg'); /* Ruta de tu imagen */
+    background-image: url('/public/home.webp'); /* Ruta de tu imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -245,7 +248,7 @@ import Layout from '../layouts/Layout.astro';
       justify-content: center;
       min-height: 70vh;
       padding: 4rem 2rem;
-      background-image: url('/public/campus.png');
+      background-image: url('/public/campus.webp');
       background-size: cover;
       background-position: center;
       position: relative; /* Ensure that absolute positioning inside it works */
@@ -354,7 +357,7 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     justify-content: center;
     padding: 4rem 1rem;
-    background-image: url('/public/campus.png');
+    background: #070726;
     background-size: cover;
     background-position: center;
     color: white;
@@ -420,12 +423,20 @@ import Layout from '../layouts/Layout.astro';
     font-weight: 500;
   }
 
+  .form-contact {
+    margin-bottom: 1.5rem;
+  }
+  .form-contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
   .required {
     color: #EF4444;
   }
 
   .form-group input {
-    width: 100%;
+    width: 90%;
     padding: 0.75rem;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -433,8 +444,20 @@ import Layout from '../layouts/Layout.astro';
     color: white;
     transition: border-color 0.3s ease;
   }
-
+  .form-contact input {
+    width: 96%;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    transition: border-color 0.3s ease;
+  }
   .form-group input:focus {
+    outline: none;
+    border-color: #A855F7;
+  }
+  .form-contact input:focus {
     outline: none;
     border-color: #A855F7;
   }
@@ -502,6 +525,15 @@ import Layout from '../layouts/Layout.astro';
   height: 100%;
   background: rgba(2, 2, 45, 0.79);
   z-index: 2;
+}
+.information p a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.information p a:hover {
+  color: #A855F7;
 }
   
   /* Estilo para dispositivos móviles */
@@ -586,6 +618,15 @@ import Layout from '../layouts/Layout.astro';
     color: white;
     transition: border-color 0.3s ease;
   }
+  .form-contact  input {
+    width: 70vw;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    transition: border-color 0.3s ease;
+  }
   .footer {
     position: relative;
     min-height: 50vh; /* Altura mínima para el footer en móvil */
@@ -615,6 +656,15 @@ import Layout from '../layouts/Layout.astro';
     font-size: 1rem;
     margin: 0.5rem 0;
   }
+  .information p a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.information p a:hover {
+  color: #A855F7;
+}
 }
 
 /* Estilo para tablets */
