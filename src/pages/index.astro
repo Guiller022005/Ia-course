@@ -1,70 +1,584 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1 class="text-center text-7xl font-extrabold">Dev👨🏼‍💻
-			<span class="block">Books</span></h1>
-	</main>
+<Layout title="Aprende IA en 3 meses">
+  <main>
+    <div class="content-wrapper">
+      <h1 class="title">
+        Asegura tu lugar en el <span class="highlight">futuro de la tecnología</span>
+      </h1>
+      <h2 class="subtitle">Aprende IA en <span class="highlight">3 meses.</span></h2>
+      <button class="cta-button">Inscríbete Ahora</button>
+    </div>
+  </main>
+
+  <!-- Nueva Sección Agregada -->
+  <section class="program-section">
+    <div class="title-blue">
+      <h2 class="title-blue-text">CURSO EN IA GENERATIVA</h2>
+      <img src="Line 1.png">
+    </div>
+    <!-- Título Div Azul -->
+
+    <div class="text-container">
+      <h1 class="section-title">¿Qué aprenderás?</h1>
+      <p class="section-description">
+        Conviértete en un experto en inteligencia artificial con un curso intensivo diseñado para principiantes y profesionales. Aprende de mentores expertos y trabaja en proyectos reales que impulsarán tu carrera tecnológica.
+      </p>
+    </div>
+
+    <div class="cards-container flex flex-wrap gap-8 justify-center">
+      <!-- Tarjeta 1 -->
+      <div class="card">
+        <h2 class="card-icon">ICONO</h2>
+        <h3 class="card-title">Título Topic</h3>
+        <p class="card-description">
+          Descripción del topic que cubrirá, lorem ipsum dolor sit amet consectetur adipisicing elit qui minus mollitia.
+        </p>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="card">
+        <h2 class="card-icon">ICONO</h2>
+        <h3 class="card-title">Título Topic</h3>
+        <p class="card-description">
+          Descripción del topic que cubrirá, lorem ipsum dolor sit amet consectetur adipisicing elit qui minus mollitia.
+        </p>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="card">
+        <h2 class="card-icon">ICONO</h2>
+        <h3 class="card-title">Título Topic</h3>
+        <p class="card-description">
+          Descripción del topic que cubrirá, lorem ipsum dolor sit amet consectetur adipisicing elit qui minus mollitia.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="formulario">
+    <div class="formulario-wrapper">
+      <h1 class="formulario-title">
+        ¡Regístrate!
+      </h1>
+      <h2 class="formulario-subtitle">¡Y comienza tu viaje en IA ahora!</h2>
+      
+      <div class="form-container">
+        <form>
+          <div class="input-grid">
+            <div class="input-group">
+              <label>Nombre <span class="required">*</span></label>
+              <input type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="input-group">
+              <label>Apellido <span class="required">*</span></label>
+              <input type="text" placeholder="Tu apellido" required>
+            </div>
+          </div>
+  
+          <div class="input-group">
+            <label>Correo Electrónico <span class="required">*</span></label>
+            <input type="email" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+  
+          <div class="input-grid">
+            <div class="input-group">
+              <label>Empresa <span class="required">*</span></label>
+              <input type="text" placeholder="Empresa para la que trabajas" required>
+            </div>
+            <div class="input-group">
+              <label>Cargo <span class="required">*</span></label>
+              <input type="text" placeholder="Tu cargo actual" required>
+            </div>
+          </div>
+  
+          <div class="input-group">
+            <label>Teléfono <span class="required">*</span></label>
+            <input type="tel" placeholder="(321) 123-4567" required>
+          </div>
+  
+          <button type="submit" class="submit-button">
+            Reserva tu lugar
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+  /* Evita scroll en la página */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+
+  /* Configuración principal del fondo */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/public/home.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  /* Filtro azul oscuro */
+  main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 45, 0.79);  /* Color azul oscuro con opacidad */
+    z-index: 1;
+  }
+
+  /* Contenedor para centrar el contenido */
+  .content-wrapper {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté encima del filtro */
+    text-align: center;
+    color: white;
+    padding: 1rem;
+  }
+
+  /* Estilos del título principal */
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  /* Estilos del texto destacado */
+  .highlight {
+    color: #0c35ee; /* Color azul claro */
+    font-weight: bold;
+  }
+
+  /* Subtítulo */
+  .subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Botón de llamado a la acción */
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #1E40AF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #0d2bd1; /* Cambio de color al pasar el mouse */
+	transform: scale(1.1); 
+  }
+
+    /* Estilos para la nueva sección */
+    .program-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      padding: 4rem 2rem;
+      background-image: url('/public/campus.png');
+      background-size: cover;
+      background-position: center;
+      position: relative; /* Ensure that absolute positioning inside it works */
+      color: white;
+      }
+  /* Filtro azul oscuro */
+  .program-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 45, 0.79);  /* Color azul oscuro con opacidad */
+    z-index: 1;
+  }
+
+  .program-section > * {
+  position: relative;
+  z-index: 5; /* Asegura que el contenido esté encima del filtro */
+}
+
+  /* Contenedor de texto */
+.text-container {
+  position: absolute; /* Absolute position */
+  top: 10%; /* Distance from the top of the page */
+  left: 2rem;
+  width: 65vw;
+  margin-bottom: 3rem;
+}
+
+  /* Título azul en la sección */
+  .title-blue {
+    background: transparent;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .title-blue-text {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .section-description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    max-width: 800px;
+  }
+
+  /* Contenedor de tarjetas */
+.cards-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center; /* Centra las tarjetas */
+  margin-top: 2rem;
+}
+
+  .card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-width: 350px; /* Asegura que todas las tarjetas tengan el mismo tamaño mínimo */
+  max-width: 350px; /* Limita el tamaño máximo de las tarjetas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    color: #6a85ff; /* Color del icono */
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  /* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Ajustar el título principal */
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  /* Ajuste para la sección de programa */
+  .program-section {
+    padding: 4rem 1rem;
+    min-height: auto; /* El alto será ajustado automáticamente */
+  }
+
+  /* Ajustes al título y descripción de la sección */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* Ajustes de la tarjeta */
+  .cards-container {
+    flex-direction: column; /* Mostrar tarjetas en columna */
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+  .text-container {
+    top: 10%;
+    left: 0rem;
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
+  .title-blue img{
+    background: transparent;
+    width: 40vh;
+    height: 1vh;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Estilo para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  /* Ajuste para la sección de programa */
+  .program-section {
+    padding: 4rem 2rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 45%; /* Las tarjetas toman un 45% del ancho */
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+}
+
+/* Estilo para escritorio */
+@media (min-width: 1025px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+  }
+
+  /* Ajustes para la sección de programa */
+  .program-section {
+    padding: 5rem 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-description {
+    font-size: 1.2rem;
+    max-width: 80%;
+  }
+
+  .cards-container {
+    gap: 2rem;
+  }
+
+  .card {
+    width: 30%; /* Las tarjetas toman un 30% del ancho */
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background-image: url('/public/campus.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+  }
+
+  .formulario::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 45, 0.79);
+    z-index: 1;
+  }
+
+  .formulario-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .formulario-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #A855F7;
+    margin-bottom: 0.5rem;
+  }
+
+  .formulario-subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .form-container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+  }
+
+  .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .input-group {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .required {
+    color: #EF4444;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+  }
+
+  .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #A855F7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: #9333EA;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .formulario {
+      padding: 2rem 1rem;
+    }
+
+    .formulario-title {
+      font-size: 2rem;
+    }
+
+    .formulario-subtitle {
+      font-size: 1.8rem;
+    }
+
+    .input-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .form-container {
+      padding: 1rem;
+    }
+  }
 </style>

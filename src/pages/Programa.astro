@@ -1,69 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro'; // Usar el layout ya definido
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Programa de IA Generativa">
-  <main class="bg-gray-100 py-12 px-6">
-    <!-- Sección de Beneficios Clave -->
-    <section class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-6">Beneficios Clave del Curso</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Beneficio 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Desarrollo de Modelos Avanzados</h3>
-          <p class="text-gray-600">Aprenderás a crear y entrenar modelos generativos como GANs y VAEs, que están revolucionando la industria.</p>
-        </div>
-        <!-- Beneficio 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Aplicaciones Prácticas</h3>
-          <p class="text-gray-600">Explorarás aplicaciones del mundo real de la IA generativa, como generación de imágenes, música y texto.</p>
-        </div>
-        <!-- Beneficio 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Acceso a Herramientas de Vanguardia</h3>
-          <p class="text-gray-600">Trabajarás con herramientas y plataformas de última generación como TensorFlow, PyTorch y OpenAI para el desarrollo de IA.</p>
-        </div>
+<Layout title="¿Qué aprenderás?">
+  <main>
+    <section class="program-section">
+      <div class="text-container">
+        <h1 class="section-title">¿Qué aprenderás?</h1>
+        <p class="section-description">
+          Conviértete en un experto en inteligencia artificial con un curso intensivo diseñado para principiantes y profesionales. Aprende de mentores expertos y trabaja en proyectos reales que impulsarán tu carrera tecnológica.
+        </p>
       </div>
-    </section>
 
-    <!-- Sección de Módulos Principales -->
-    <section class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-6">Módulos Principales del Curso</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Módulo 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Introducción a la IA Generativa</h3>
-          <p class="text-gray-600">Un vistazo general a los conceptos y aplicaciones fundamentales de la inteligencia artificial generativa.</p>
+      <div class="cards-container flex flex-wrap gap-8 justify-center">
+        <!-- Tarjeta 1 -->
+        <div class="card">
+          <h2 class="card-icon">ICONO</h2>
+          <h3 class="card-title">Título Topic</h3>
+          <p class="card-description">
+            Descripción del topic que cubrirá, lorem ipsum dolor sit amet consectetur adipisicing elit qui minus mollitia.
+          </p>
         </div>
-        <!-- Módulo 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Redes Generativas Adversarias (GANs)</h3>
-          <p class="text-gray-600">Aprenderás el funcionamiento interno de las GANs, uno de los modelos más innovadores para generación de contenido.</p>
+        <!-- Tarjeta 2 -->
+        <div class="card">
+          <h2 class="card-icon">ICONO</h2>
+          <h3 class="card-title">Título Topic</h3>
+          <p class="card-description">
+            Descripción del topic que cubrirá, lorem ipsum dolor sit amet consectetur adipisicing elit qui minus mollitia.
+          </p>
         </div>
-        <!-- Módulo 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Modelos Variacionales Autoencoders (VAEs)</h3>
-          <p class="text-gray-600">En este módulo, dominarás el uso de VAEs para la creación de modelos generativos eficientes en diversos dominios.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Stack Tecnológico -->
-    <section class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-6">Stack Tecnológico del Curso</h2>
-      <p class="text-lg text-gray-600 mb-4">El curso está diseñado para trabajar con las tecnologías más avanzadas en el campo de la inteligencia artificial generativa.</p>
-      <div class="flex justify-center space-x-8">
-        <div class="flex items-center">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/tensorflow.svg" alt="TensorFlow" class="h-12 w-12" />
-          <span class="ml-4 text-xl">TensorFlow</span>
-        </div>
-        <div class="flex items-center">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/pytorch.svg" alt="PyTorch" class="h-12 w-12" />
-          <span class="ml-4 text-xl">PyTorch</span>
-        </div>
-        <div class="flex items-center">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/openai.svg" alt="OpenAI" class="h-12 w-12" />
-          <span class="ml-4 text-xl">OpenAI</span>
+        <!-- Tarjeta 3 -->
+        <div class="card">
+          <h2 class="card-icon">ICONO</h2>
+          <h3 class="card-title">Título Topic</h3>
+          <p class="card-description">
+            Descripción del topic que cubrirá, lorem ipsum dolor sit amet consectetur adipisicing elit qui minus mollitia.
+          </p>
         </div>
       </div>
     </section>
@@ -71,22 +43,108 @@ import Layout from '../layouts/Layout.astro'; // Usar el layout ya definido
 </Layout>
 
 <style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    text-align: center;
-  }
-  .bg-gradient-to-b {
-    background: linear-gradient(to bottom, #3b82f6, #9333ea);
-  }
+/* Fondo del programa */
+.program-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-image: url('/public/campus.png');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure that absolute positioning inside it works */
+  color: white;
+}
+
+/* Filtro azul */
+.program-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 45, 0.79); /* Filtro azul con opacidad */
+  z-index: 1; 
+}
+
+.program-section > * {
+  position: relative;
+  z-index: 5; /* Asegura que el contenido esté encima del filtro */
+}
+
+/* Contenedor de texto */
+.text-container {
+  position: absolute; /* Absolute position */
+  top: 10%; /* Distance from the top of the page */
+  left: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* Título de la sección */
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Descripción de la sección */
+.section-description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+/* Contenedor de tarjetas */
+.cards-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center; /* Centra las tarjetas */
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+/* Estilos de las tarjetas */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-width: 350px; /* Asegura que todas las tarjetas tengan el mismo tamaño mínimo */
+  max-width: 350px; /* Limita el tamaño máximo de las tarjetas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Icono de la tarjeta */
+.card-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4739ff;
+  margin-bottom: 1rem;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Descripción de la tarjeta */
+.card-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
 </style>
+
+
