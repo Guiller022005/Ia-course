@@ -20,12 +20,13 @@ import Layout from '../layouts/Layout.astro';
       <img src="Line 1.webp">
     </div>
     <!-- Título Div Azul -->
-
-    <div class="text-container">
-      <h1 class="section-title">¿Qué aprenderás?</h1>
-      <p class="section-description">
-        Conviértete en un experto en inteligencia artificial con un curso intensivo diseñado para principiantes y profesionales. Aprende de mentores expertos y trabaja en proyectos reales que impulsarán tu carrera tecnológica.
-      </p>
+    <div class="Learn">
+      <div class="text-container">
+        <h1 class="section-title">¿Qué aprenderás?</h1>
+        <p class="section-description">
+          Conviértete en un experto en inteligencia artificial con un curso intensivo diseñado para principiantes y profesionales. Aprende de mentores expertos y trabaja en proyectos reales que impulsarán tu carrera tecnológica.
+        </p>
+      </div>
     </div>
 
     <div class="cards-container flex flex-wrap gap-8 justify-center">
@@ -151,10 +152,10 @@ import Layout from '../layouts/Layout.astro';
     <div class="information">
       <h1>Centro de entrenamiento para programadores.</h1>
       <p>Zona Franca Santander, Edificio Zenith Piso 6</p>
-      <p>
-        <a href="tel:+573160522555" style="color: white; text-decoration: none;">316 0522555</a> | 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=encuentratutalento@campuslands.com&su=Contacto..." target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">encuentratutalento@campuslands.com</a>
-      </p>
+      <div class="contact-links">
+        <a href="tel:+573160522555">316 0522555</a> | 
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=encuentratutalento@campuslands.com&su=Contacto..." target="_blank" rel="noopener noreferrer">encuentratutalento@campuslands.com</a>
+      </div>
     </div>
   </footer>
 </Layout>
@@ -174,7 +175,7 @@ import Layout from '../layouts/Layout.astro';
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('/public/home.webp'); /* Ruta de tu imagen */
+    background-image: url('/home.webp'); /* Ruta de tu imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -246,9 +247,9 @@ import Layout from '../layouts/Layout.astro';
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 70vh;
+      min-height: 100vh;
       padding: 4rem 2rem;
-      background-image: url('/public/campus.webp');
+      background-image: url('/campus.webp');
       background-size: cover;
       background-position: center;
       position: relative; /* Ensure that absolute positioning inside it works */
@@ -270,15 +271,13 @@ import Layout from '../layouts/Layout.astro';
   position: relative;
   z-index: 5; /* Asegura que el contenido esté encima del filtro */
 }
-
-  /* Contenedor de texto */
-.text-container {
-  position: absolute; /* Absolute position */
-  top: 10%; /* Distance from the top of the page */
-  left: 2rem;
-  width: 65vw;
-  margin-bottom: 3rem;
-}
+  .Learn{
+    position: absolute; /* Absolute position */
+    top: 10%; /* Distance from the top of the page */
+    left: 2rem;
+    width: 60vw;
+    margin-bottom: 2rem;
+  }
 
   /* Título azul en la sección */
   .title-blue {
@@ -507,6 +506,9 @@ import Layout from '../layouts/Layout.astro';
   padding: 1rem;
   z-index: 5;
 }
+ .information p {
+  font-size: 1.3rem;
+ }
 
   .logo img {
     position: absolute;
@@ -526,16 +528,18 @@ import Layout from '../layouts/Layout.astro';
   background: rgba(2, 2, 45, 0.79);
   z-index: 2;
 }
-.information p a {
+.contact-links a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.information p a:hover {
+.contact-links a:hover {
   color: #A855F7;
+  transform: scale(1.1);
 }
-  
+
   /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
   /* Ajustar el título principal */
@@ -591,6 +595,10 @@ import Layout from '../layouts/Layout.astro';
     left: 0rem;
     width: 80vw;
     margin-bottom: 3rem;
+  }
+  .Learn {
+    left: 0px;
+    width: 78vw;
   }
   .title-blue img{
     background: transparent;
